@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | AfroBrasil</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      background-color: #f4f1eb;
+      font-family: 'Segoe UI', sans-serif;
+      color: #2d1e12;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #3e2f21;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav a {
+      color: #fffbe5;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    h1, h2 {
+      color: #2d1e12;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .portfolio-item, .award-item {
+      background-color: #fff;
+      border: 2px solid #a07654;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .portfolio-item h3, .award-item h3 {
+      color: #5a391b;
+    }
+
+    footer {
+      background-color: #3e2f21;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="afrobrasil.png.png" alt="Logo AfroBrasil">
+    <nav>
+      <a href="afrobrasil.html"><i class="fas fa-house"></i> Início</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Portfólio</h1>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="samba.png.png" alt="Samba Maragogó">
+        <h3>Documentário: Samba Maragogó</h3>
+        <p>Direção e produção de documentário sobre o samba de roda de em Maragogipe/Ba.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="aespreita.png.png" alt="A espreita da noite">
+        <h3>Curta: A espreita da noite</h3>
+        <p>Curta-metragem de animação em stop motion inspirado na cultura afro-brasileira.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="oficina audiovisual.png.jpg" alt="oficina audiovisual">
+        <h3>oficinas</h3>
+        <p>oficina audiovisual em parceria com a casa preta Hub na cidade de Cachoeira/Ba realizada em 2024</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="edu.png.PNG" alt="Cobertura de Eventos">
+        <h3>Cobertura de Eventos</h3>
+        <p>Cobertura do 10ª aniversario da associação Edu Capoeira.</p>
+      </div>
+    </div>
+
+<style>
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Itens do serviço */
+.service-item {
+  background-color: #fff;
+  border: 2px solid #a07654;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  margin-bottom: 15px;
+  scroll-behavior: smooth;
+}
+
+.carousel img {
+  height: 180px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
+}
+
+/* Ocultar barra de rolagem no Chrome/Safari */
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .carousel img {
+    height: 150px;
+  }
+}
+</style>
+
+
+

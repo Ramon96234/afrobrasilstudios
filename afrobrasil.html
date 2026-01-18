@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AfroBrasil</title>
+
+  <!-- CSS Externos -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="afrobrasil.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    /* ANIMAÇÕES */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #234B2B;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      height: 100px;
+      display: block;
+      margin: 10 auto 10px auto;
+    }
+
+    nav a {
+      margin: 10px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #E4B25D;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+      animation: slideUp 1.5s ease forwards;
+    }
+
+    section {
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    h2 {
+      text-align: center;
+      color: #234B2B;
+      animation: slideUp 1s ease forwards;
+    }
+
+    .grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: #eee;
+      padding: 20px;
+      border-radius: 8px;
+      min-width: 150px;
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    footer {
+      background-color: #234B2B;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .adinkra-center {
+      display: block;
+      margin: 0 auto 10px auto;
+      height: 60px;
+    }
+
+    .adinkra-corner {
+      position: absolute;
+      width: 40px;
+      opacity: 0.15;
+    }
+
+    .top-left {
+      top: 10px;
+      left: 10px;
+    }
+
+    .top-right {
+      top: 10px;
+      right: 10px;
+    }
+
+    /* Botão animado */
+    .botao-equipe {
+      background-color: #234B2B;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .botao-equipe:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #E4B25D;
+    }
+
+	  
+  </style>
+</head>
+
+<body>
+  <header>
+  <img src="afrobrasil.png.png" alt="Logo AfroBrasil">
+  <nav>
+    <a href="afrobrasil.html">Início</a>
+    <a href="Portfolio.html">Portfólio</a>
+	<a href="servicos.html">Serviços</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+</header>
+
+  <!-- Seção bem vindo-->
+ <section class="hero">
+  <div class="hero-content">
+    <img src="aespreita.png.png" alt="capal espreita">
+  </div>
+</section>
+
+  <!-- Seção quem somos-->
+  <section class="hero-quemsomos adinkra-section">
+  <video class="video-bg" autoplay muted loop playsinline>
+    <source src="quem somos.mp4" type="video/mp4">
+    Seu navegador não suporta a tag de vídeo.
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="hero-quemsomos-content">
+    <h2>Quem Somos</h2>
+    <p>
+      A AfroBrasil é uma produtora independente que conta histórias com 
+      identidade, ancestralidade e inovação, valorizando a cultura brasileira 
+      em diferentes linguagens artísticas e audiovisuais.
+    </p>
+    <a href="equipe.html" class="botao-equipe">Conheça Nossa Equipe</a>
+  </div>
+</section>
+
+
+
+<section id="Trabalhos Realizados" class="Trabalhos Realizados">
+  <img src="adinkras.png" class="adinkra-corner top-left" alt="">
+  <img src="adinkras.png" class="adinkra-corner top-right" alt="">
+  <img src="adinkras.png" alt="Adinkra Decorativo" class="adinkra-center">
+
+  <div class="container">
+    <h2>Trabalhos realizados</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="samba.png.png" alt="Projeto Samba Maragogó" style="width:100%; border-radius: 8px;">
+        <p>Samba Maragogó</p>
+      </div>
+      <div class="card">
+        <img src="aespreita.png.png" alt="Espreita da noite" style="width:100%; border-radius: 8px;">
+        <p>Espreita da Noite</p>
+      </div>
+      <div class="card">
+        <img src="festa.png.png" alt="Festa da Boa Morte" style="width:100%; border-radius: 8px;">
+        <p>Cobertura da festa da Nossa senhora da Boa Morte na cidade de Cacgoeira/Ba em 2024</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="clientes" class="clientes" style="background-color: #f4f4f4;">
+  <img src="adinkras2.png" class="adinkra-corner top-left" alt="">
+  <img src="adinkras.png" class="adinkra-corner top-right" alt="">
+  <img src="adinkras.png" alt="Adinkra Decorativo" class="adinkra-center">
+
+  <div class="container" style="max-width: 1000px; margin: auto; text-align: center;">
+    <h2>Nossos Clientes</h2>
+    <div class="clientes-grid">
+      <div class="cliente-card">
+        <img src="Logo RY.jpeg" alt="Logo Cliente 1">
+       
+      </div>
+      <div class="cliente-card">
+        <img src="edu.jpeg" alt="Logo Cliente 2">
+       
+      </div>
+      <div class="cliente-card">
+        <img src="ponto do licor.jpg" alt="Logo Cliente 3">
+        
+      </div>
+      <!-- Adicione mais clientes aqui -->
+    </div>
+  </div>
+</section>
+
+  <footer id="contato">
+    <div class="container">
+      <p>&copy; 2025 AfroBrasil Produtora. Todos os direitos reservados.</p>
+      <p>Contato: <a href="mailto:afrobrasilstudios@gmail.com" style="color: #fff;">afrobrasilstudios@gmail.com</a></p>
+    </div>
+  </footer>
+	
+</body>
+</html>
+
+
+
+
+
+
